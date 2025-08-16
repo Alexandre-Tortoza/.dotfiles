@@ -118,7 +118,7 @@ vim.schedule(function()
 end)
 
 -- Enable break indent
-vim.o.breakindent = true
+vim.o.breakindent = false
 
 -- Save undo history
 vim.o.undofile = true
@@ -689,6 +689,8 @@ require('lazy').setup({
         -- ts_ls = {},
         --
 
+        vuels = {},
+        vtsls = {},
         intelephense = {},
         lua_ls = {
           -- cmd = { ... },
@@ -1033,15 +1035,15 @@ require('lazy').setup({
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
 
-vim.g.clipboard = {
-  name = 'windows_clipboard_wsl',
-  copy = {
-    ['+'] = { 'clip.exe' },
-    ['*'] = { 'clip.exe' },
-  },
-  paste = {
-    ['+'] = { 'powershell.exe', '-NoProfile', '-Command', 'Get-Clipboard' },
-    ['*'] = { 'powershell.exe', '-NoProfile', '-Command', 'Get-Clipboard' },
-  },
-  cache_enabled = 0,
-}
+-- vim.g.clipboard = {
+--   name = 'windows_clipboard_wsl',
+--   copy = {
+--     ['+'] = { 'clip.exe' },
+--     ['*'] = { 'clip.exe' },
+--   },
+--   paste = {
+--     ['+'] = { 'powershell.exe', '-NoProfile', '-Command', 'Get-Clipboard' },
+--     ['*'] = { 'powershell.exe', '-NoProfile', '-Command', 'Get-Clipboard' },
+--   },
+--   cache_enabled = 0,
+-- }
