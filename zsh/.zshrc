@@ -19,7 +19,9 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-histdb/sqlite-history.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-you-should-use/you-should-use.plugin.zsh
-
+source ~/.zsh/zsh-bat/zsh-bat.plugin.zsh
+source ~/.zsh/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+# source ~/.zsh/zsh-copilot/zsh-copilot.plugin.zsh
 
 autoload -Uz add-zsh-hook
 
@@ -51,3 +53,4 @@ alias fd='fd --color=always'
 
 alias python-mclr='source sklearn-env/bin/activate'
 # alias btm ='btm --theme gruvbox'
+
