@@ -709,7 +709,7 @@ require('lazy').setup({
         --
 
         vuels = {},
-        vtsls = {},
+        -- vtsls = {},
         intelephense = {},
         lua_ls = {
           -- cmd = { ... },
