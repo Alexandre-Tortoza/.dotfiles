@@ -15,15 +15,16 @@ export PATH="$PATH:/home/alexmrtr_/.local/bin"
 # =========================
 # Plugins e inicializações
 # =========================
-# source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-# source ~/.zsh/zsh-histdb/sqlite-history.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-histdb/sqlite-history.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-you-should-use/you-should-use.plugin.zsh
+
+
 autoload -Uz add-zsh-hook
 
-# eval "$(ssh-agent -s)"
-# ssh-add ~/.ssh/id_ed25519
-
 eval "$(zoxide init zsh)"
-eval "$(oh-my-posh init zsh --config '~/omp-themes/pure.omp.json')"
+eval "$(oh-my-posh init zsh --config '~/oh-my-posh/pure.omp.json')"
 # eval "$(oh-my-posh init zsh --config '~/omp-themes/emodipt-extend.omp.json')"
 # eval "$(oh-my-posh init zsh --config '~/omp-themes/negligible.omp.json')"
 # eval "$(oh-my-posh init zsh --config '~/omp-themes/nordtron.omp.json')"
