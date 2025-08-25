@@ -11,3 +11,6 @@ ln -s $DOTFILES/nvim $HOME/.config/nvim
 
 rm -rf $HOME/.tmux.conf
 ln -s $DOTFILES/tmux/tmux.conf $HOME/.tmux.conf
+
+rm -rf $HOME/omp-themes
+ln -s $DOTFILES/omp-themes $HOME/omp-themes
